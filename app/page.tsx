@@ -3,6 +3,7 @@ import SectionAll from "./_components/SectionAll";
 import SectionCountry from "./_components/SectionCountry";
 import SectionPlan from "./_components/SectionPlan";
 import SectionStudents from "./_components/SectionStudents";
+import Subscribe from "./_components/Subscribe";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <SectionStudents />
       <SectionCountry />
       <SectionAll />
+      <Subscribe />
     </div>
   );
 }
