@@ -21,10 +21,10 @@ export default function Subscribe() {
             <div className="flex-1">
               <div className="flex">
                 <Input
-                  className="rounded-r-none h0[48px] bg-white"
+                  className="rounded-r-none h-[48px] bg-white"
                   placeholder="Enter your email"
                 />
-                <Button className="h-[84px] rounded-l-none bg-neutral-900 px-8">
+                <Button className="h-[48px] rounded-l-none bg-neutral-900 px-8">
                   Subscribe
                 </Button>
               </div>
