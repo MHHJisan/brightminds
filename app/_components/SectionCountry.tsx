@@ -1,12 +1,13 @@
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
 import React from "react";
 
 const destinations = [
-  { name: "Study In Ireland", image: "" },
-  { name: "Study In New Zealand", image: "" },
-  { name: "Study In USA", image: "" },
-  { name: "Study In Canada", image: "" },
+  { name: "Study In Ireland", image: "/countries/ireland.png" },
+  { name: "Study In New Zealand", image: "/countries/newzealand.png" },
+  { name: "Study In USA", image: "/countries/usa.png" },
+  { name: "Study In Canada", image: "/countries/canada.png" },
 ];
 
 export default function SectionCountry() {
@@ -27,11 +28,15 @@ export default function SectionCountry() {
         <div className="grid grid-cols-4 gap-8">
           {destinations.map((destination) => (
             <Card key={destination.name} className="relative overflow-hidden">
-              <Image
-                src={destination.image}
-                alt={destination.name}
-                className="w-full h-[300px] object-cover"
-              />
+              <AspectRatio ratio={247 / 327}>
+                <Image
+                  src={destination.image}
+                  alt={destination.name}
+                  layout="fill"
+                  loading="lazy"
+                  className="w-full h-[300px] object-cover"
+                />
+              </AspectRatio>
               <div className="absolute bottom-0 left-0 p-6">
                 <h3 className="text-3xl font-bold text-white">
                   {destination.name}
