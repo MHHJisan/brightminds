@@ -40,7 +40,7 @@ const feature = [
 export default function SectionAll() {
   return (
     <div>
-      <section className="container mx-auto py-20">
+      <section className="container mx-auto py-2 px-20">
         <h2 className="text-4xl font-bold text-center mb-16">
           An all-on-one solution
         </h2>

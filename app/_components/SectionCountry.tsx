@@ -13,7 +13,7 @@ const destinations = [
 export default function SectionCountry() {
   return (
     <div>
-      <section className="container mx-auto py-20">
+      <section className="container mx-auto py-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">
             Wherever You Want To Go, We'll Get You There

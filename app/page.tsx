@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar />
       <SectionPlan />
       {/* <SectionStudents /> */}
-      <SectionStudentsTest />
+      <SectionStudents />
       <SectionCountry />
       <SectionAll />
       <Contact />
