@@ -59,25 +59,25 @@ export default function SectionStudents() {
           We put our students at the hear of everything we do.
         </h2>
 
-        <Carousel>
-          <CarouselContent>
+        <Carousel className="max-w-5xl mx-auto">
+          <CarouselContent className="flex">
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index}>
+              <CarouselItem
+                key={index}
+                className="w-1/2 md:w-1/3 px-2" // Controls how many items are visible
+              >
                 <Card className="h-[568px]">
                   <CardContent className="p-6">
-                    <p className="text-[$535353]">{testimonial.content}</p>
+                    <p className="text-[#535353]">{testimonial.content}</p>
                     <div className="mt-8">
                       <h3 className="font-bold">{testimonial.name}</h3>
                       <div className="flex items-center gap-2 mt-2">
                         <span className="font-bold">
                           {testimonial.fromCountry}
                         </span>
-                        <span>
-                          <ChevronRight className="h-2 w-1" />
-                        </span>
+                        <ChevronRight className="h-4 w-4" />
                         <span>{testimonial.toCountry}</span>
                       </div>
-
                       <div className="flex items-center gap-2 mt-2">
                         <Image src="" alt="" width={8} height={8} />
                         <span>{testimonial.university}</span>

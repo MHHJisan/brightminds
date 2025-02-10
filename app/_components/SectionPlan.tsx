@@ -1,3 +1,4 @@
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
@@ -27,8 +28,23 @@ export default function SectionPlan() {
               </Button>
             </div>
           </div>
-          <div>
-            <Image src="" alt="Studeents" className="w-full h-auto" />
+          <div className="relative">
+            <AspectRatio ratio={757 / 378}>
+              <Image
+                src="/sectionAll.png"
+                alt="Students"
+                width={0}
+                height={0}
+                sizes="100vw"
+                className="w-full h-auto rounded-3xl"
+                style={{
+                  maskImage:
+                    "radial-gradient(circle at center top, rgba(255,255,255,1) 20%, rgba(255,255,255,0) 100%), linear-gradient(to bottom, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 100%)",
+                  WebkitMaskImage:
+                    "radial-gradient(circle at center top, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%), linear-gradient(to bottom, rgba(255,255,255,1) 30%, rgba(255,255,255,0) 100%)",
+                }}
+              />
+            </AspectRatio>
           </div>
         </div>
       </section>
