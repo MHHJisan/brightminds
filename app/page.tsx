@@ -5,6 +5,7 @@ import SectionAll from "./_components/SectionAll";
 import SectionCountry from "./_components/SectionCountry";
 import SectionPlan from "./_components/SectionPlan";
 import SectionService from "./_components/SectionService";
+import SectionSocialData from "./_components/SectionSocialData";
 import SectionStudents from "./_components/SectionStudents";
 import SectionStudentsTest from "./_components/SectionStudentsTest";
 import ServiceQuote from "./_components/ServiceQuote";
@@ -23,8 +24,9 @@ export default function Home() {
       <SectionStudents />
       <SectionCountry />
       <SectionAll />
-      <Contact />
+      {/* <Contact /> */}
       <Subscribe />
+      <SectionSocialData />
       <Footer />
     </div>
   );
