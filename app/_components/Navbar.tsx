@@ -10,10 +10,14 @@ import Image from "next/image";
 import React from "react";
 
 const navItems = [
-  { label: "Study Abroad", hasDropdown: true },
-  { label: "Student Service", hasDropdown: true },
   { label: "About Us ", hasDropdown: false },
-  { label: "Contacts", hasDropdown: false },
+  { label: "Study Abroad", hasDropdown: true },
+
+  { label: "Student Service", hasDropdown: true },
+
+  { label: "Resources", hasDropdown: false },
+
+  { label: "Contact Us", hasDropdown: false },
 ];
 
 export default function Navbar() {
