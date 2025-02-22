@@ -9,6 +9,7 @@ import SectionStudents from "./_components/SectionStudents";
 import SectionStudentsTest from "./_components/SectionStudentsTest";
 import ServiceQuote from "./_components/ServiceQuote";
 import Subscribe from "./_components/Subscribe";
+import SucessStoryImpact from "./_components/SucessStoryImpact";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       {/* <SectionStudents /> */}
       <ServiceQuote />
       <SectionService />
+      <SucessStoryImpact />
       <SectionStudents />
       <SectionCountry />
       <SectionAll />
