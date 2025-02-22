@@ -16,6 +16,7 @@ export default function Home() {
       <Navbar />
       <SectionPlan />
       {/* <SectionStudents /> */}
+      <ServiceQuote />
       <SectionService />
       <SectionStudents />
       <SectionCountry />

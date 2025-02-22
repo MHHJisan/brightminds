@@ -4,7 +4,7 @@ import React from "react";
 
 export default function ServiceQuote() {
   return (
-    <div className="w-full max-w-[1154px] mx-auto">
+    <div className="w-full max-w-[1154px] mx-auto mb-12">
       <Card className="relative bg-[#fffcfa] border-[#f68e13] shadow-[0px_4px_15.7px_1px_#0000000f]">
         <CardContent className="flex flex-col items-center py-8 px-16">
           <GraduationCap className="w-[49px] h-[49px] text-[#f68e13] mb-4" />
