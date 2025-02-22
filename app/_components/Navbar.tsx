@@ -7,17 +7,18 @@ import {
 } from "@/components/ui/navigation-menu";
 import { ChevronDown, Search } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const navItems = [
-  { label: "About Us ", hasDropdown: false },
-  { label: "Study Abroad", hasDropdown: true },
+  { label: "About Us ", href: "/about", hasDropdown: false },
+  { label: "Study Abroad", href: "/study-abroad", hasDropdown: true },
 
-  { label: "Student Service", hasDropdown: true },
+  { label: "Student Service", href: "/student-service", hasDropdown: true },
 
-  { label: "Resources", hasDropdown: false },
+  { label: "Resources", href: "/resources", hasDropdown: false },
 
-  { label: "Contact Us", hasDropdown: false },
+  { label: "Contact Us", href: "/contact", hasDropdown: false },
 ];
 
 export default function Navbar() {
@@ -51,9 +52,15 @@ export default function Navbar() {
             <NavigationMenuList>
               {navItems.map((item) => (
                 <NavigationMenuItem key={item.label}>
-                  <NavigationMenuLink className="flex items-center gap-1 px-2 py-1">
-                    {item.label}
-                    {item.hasDropdown && <ChevronDown className="w-4 h-4" />}
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href={item.href}
+                      passHref
+                      className="flex items-center gap-1 px-2 py-1"
+                    >
+                      {item.label}
+                      {item.hasDropdown && <ChevronDown className="w-4 h-4" />}
+                    </Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               ))}
